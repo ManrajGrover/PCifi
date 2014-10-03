@@ -2,8 +2,8 @@
 CLS
 :MENU
 ECHO.
-ECHO             PCifi- Fork Me On GitHub
-ECHO             @ github.com/ManrajGrover
+ECHO             PCifi- Convert your PC into Wifi Hotspot instantly
+ECHO            Fork me @ github.com/ManrajGrover
 ECHO.
 ECHO Choose an option given below
 ECHO.
@@ -18,7 +18,7 @@ IF %CH%==2 GOTO START
 IF %CH%==3 GOTO STOP
 IF %CH%==4 GOTO EOF
 :SETUP
-netsh wlan set hostednetwork mode=allow ssid=Manrajp key=manrajmanraj keyusage=persistent
+netsh wlan set hostednetwork mode=allow ssid=YourWifiName key=YourPassword keyusage=persistent
 GOTO MENU
 :START
 netsh wlan start hostednetwork
